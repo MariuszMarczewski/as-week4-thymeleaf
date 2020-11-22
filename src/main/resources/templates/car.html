@@ -16,7 +16,7 @@
     <p>=========================</p>
 </tr>
 
-<form th:action="@{/add-car}" th:object="${newCar}" method="post">
+<form th:action="@{/add-car}" th:object="${newCar}" method="get">
     <p>Model:<input type="text" th:field="*{model}"></p>
     <p>Mark:<input type="text" th:field="*{mark}"></p>
     <p><input type="submit" value="add new car"></p>
